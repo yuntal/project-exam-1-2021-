@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="spaceX Contact Page">
+	<meta name="keywords" content="spaceX, contact, microsite">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpaceX | Contact</title>
+	<link href="contact.css" rel="stylesheet">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');</style>
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<img alt="spaceX" src="images/logo.png">
+	<nav>
+		<a href="index.html">Home</a> 
+        <a href="launches.html">Launches</a> 
+        <a href="about.html">About</a> 
+        <a class="current" href="contact.html">Contact</a>
+	</nav>
+	<main class="container">
+		<h1>Any questions? Get in touch with us!</h1>
+		<form id="contactForm" name="contactForm">
+			<div class="form-group">
+				<input autocomplete="off" id="firstName" name="firstName" placeholder="First name" type="form-control">
+				<div class="form-error" id="firstNameError">
+					Please enter your name
+				</div>
+			</div><input autocomplete="off" id="lastName" name="lastName" placeholder="Last name" type="form-control">
+			<div class="form-error" id="lastNameError">
+				Please enter your last name
+			</div><input autocomplete="off" id="email" name="email" placeholder="E-mail" type="form-control">
+			<div class="form-error" id="emailError">
+				Please enter a valid e-mail
+			</div><input autocomplete="off" id="subject" name="subject" placeholder="Subject" type="form-control">
+			<div class="form-error" id="subjectError">
+				Subject must be at least 7 characters long!
+			</div>
+			<textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+			<div class="form-error" id="messageError">
+				Message must be at least 10 characters long!
+			</div>
+            <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+		</form>
+	</main>
+	<script src="contact.js">
+	</script>
+	<footer>
+		<div class="social">
+			<a href="https://www.instagram.com/spacex"><i class="fab fa-instagram fa-2x"></i></a> 
+            <a href="https://twitter.com/spacex"><i class="fab fa-twitter fa-2x"></i></a> 
+            <a href="https://www.youtube.com/user/spacexchannel"><i class="fab fa-youtube fa-2x"></i></a> 
+			<p>© SpaceX 2021</p>
+		</div>
+	</footer>
+</body>
+</html>
