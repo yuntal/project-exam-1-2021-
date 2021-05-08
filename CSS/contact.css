@@ -1,0 +1,826 @@
+
+html,body {
+    height: 100%;
+    color:#fff;
+    max-width:100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color:#0F0F0F;
+    color: #fff;
+    font-family:'source sans pro';
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    text-align: right;
+    margin-top: -3%;
+    padding: 20px; 
+    margin-right:40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+
+.current{
+    font-weight:600;
+}
+
+img{
+    height: auto;
+    width:160px;
+    margin-top:4%;
+    margin-left:4%;
+}
+
+.container h1 {
+    margin-top:25%;
+    font-size: 2.9em;
+    text-align:left;
+    margin-left:4%;
+    margin-bottom:15%;
+    color:white;
+    font-weight:lighter;
+    font-family:'roboto condensed'; 
+}
+
+p{
+    margin-top:-5%;
+    font-size: 1.5em;
+    text-align:left;
+    margin-top:5%;
+    margin-bottom:20%;
+    color:white;
+    font-weight:lighter;
+    font-family:'roboto condensed'; 
+}
+
+.social{
+    margin-left:43%;
+    margin-top:18%;
+    font-size:.9em;
+}
+  
+.social p{
+    margin-left:3%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.3em;
+    margin-bottom:10%;
+}
+
+.fa-twitter {
+    color: #fff;
+    text-decoration:none;
+    font-size:1em;
+    padding:40px;
+}
+  
+.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+
+
+/* CONTACT FORM */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+form {
+    padding: 2em;
+    background: white;
+    border-radius: 1rem;
+    font-family:'roboto condensed';
+    background-color:#0F0F0F;
+}
+
+.form-control{
+    border-style:2px solid white;
+}
+
+input {
+    width: 100%;
+    margin-top: 35px;
+    padding: 10px;
+    font-size: 16px;
+    color:#fff;
+    background-color:#0F0F0F;
+    border-radius: 0.4em;
+    border: 2px solid white;
+    font-family:'roboto condensed';
+}
+
+button {
+    background-color: #0F0F0F;
+    border: none;
+    width: 150px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 0.4em;
+    margin-left:33%;
+    font-size:1em;
+    font-family:'roboto condensed';
+    border: 2px solid white;
+    margin-bottom:20%;
+}
+
+.form-error {
+    display: none;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+::placeholder{
+    color:white;
+}
+
+input[name=message], textarea {
+    background-color:#0F0F0F;
+    border-radius: 0.4em;
+    border: 2px solid white;
+    color:white;
+    font-family:'roboto condensed';
+    font-size:1em;
+    resize: both;
+    margin-top:35px;
+    height:50px;
+    width:100%;
+    padding: 8px;
+}
+  
+
+/* MEDIA QUERIES */ 
+
+
+@media only screen and (min-width : 200px) and (max-width : 280px) { 
+
+.container{
+    width:100%;
+}
+
+img{
+    margin-left:27%;
+    width:120px;
+}     
+
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+    
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+
+.container h1{
+    font-size:1.3em;
+    margin-left:6%;
+}
+
+button{
+    margin-left:12%;
+}
+   
+.social{
+    margin-left:21%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+  
+.social p{
+    margin-left:10%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+
+
+@media only screen and (min-width : 281px) and (max-width : 320px) { 
+
+.container{
+    width:100%;
+}
+    
+img{
+    margin-left:29.5%;
+    width:120px;
+}     
+
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+    
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+
+.container h1{
+    font-size:1.3em;
+    margin-left:6%;
+}
+
+button{
+    margin-left:17%;
+}
+   
+.social{
+    margin-left:24%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+  
+.social p{
+    margin-left:10%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+
+
+@media only screen and (min-width : 321px) and (max-width : 400px) {
+
+.container{
+    width:100%;
+}
+        
+img{
+    margin-left:31%;
+    width:120px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.1em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.3em;
+    text-align:center;
+    margin-left:-1%;
+}
+    
+button{
+    margin-left:23%;
+}
+       
+.social{
+    margin-left:28%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+      
+.social p{
+    margin-left:10%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+    
+@media only screen and (min-width : 401px) and (max-width : 428px) {
+    
+     
+.container{
+    width:100%;
+}
+
+img{
+    margin-left:33%;
+    width:120px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.1em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+
+.container h1{
+    font-size:1.3em;
+    text-align:center;  
+    margin-left:-2%;  
+}
+    
+button{
+    margin-left:25%;
+}
+       
+.social{
+    margin-left:30%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+      
+.social p{
+    margin-left:10%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+    
+@media only screen and (min-width : 520px) and (max-width : 568px) {
+        
+.container{
+    width:100%;
+}
+        
+img{
+    margin-left:36%;
+    width:140px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.2em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.3em;
+    text-align:center;
+    margin-left:-3%;
+}
+    
+button{
+    margin-left:34%;
+}
+       
+.social{
+    margin-left:37%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+      
+.social p{
+    margin-left:7%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+
+
+    
+@media only screen and (min-width : 600px) and (max-width : 667px) {
+        
+.container{
+    width:100%;
+}
+        
+img{
+    margin-left:38%;
+    width:150px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.5em;
+    text-align:center;
+    margin-left:-4%;
+}
+    
+button{
+    margin-left:34%;
+    font-size:1em;
+}
+       
+.social{
+    margin-left:38%;
+    margin-top:20%;
+    font-size:0.65em;
+}
+      
+.social p{
+    margin-left:6%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+    
+
+@media only screen and (min-width : 720px) and (max-width : 736px) {
+   
+.container{
+    width:100%;
+}
+
+img{
+    margin-left:39%;
+    width:150px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.5em;
+    text-align:center;
+    margin-left:-4%;
+}
+
+button{
+    margin-left:34%;
+    font-size:1.1em;
+}
+       
+.social{
+    margin-left:39%;
+    margin-top:20%;
+    font-size:0.70em;
+}
+
+.social p{
+    margin-left:5%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+
+@media only screen and (min-width : 737px) and (max-width : 768px) {
+   
+.container{
+    width:100%;
+}
+
+img{
+    margin-left:40%;
+    width:150px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.5em;
+    text-align:center;
+    margin-left:-4%;
+}
+
+button{
+    margin-left:34%;
+    font-size:1.1em;
+}
+       
+.social{
+    margin-left:40%;
+    margin-top:20%;
+    font-size:0.70em;
+}
+      
+.social p{
+    margin-left:5%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+
+@media only screen and (min-width : 769px) and (max-width : 823px) {
+        
+.container{
+    width:100%;
+}
+
+img{
+    margin-left:40.5%;
+    width:160px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.8em;
+    text-align:center;
+    margin-left:-4%;
+}
+
+button{
+    margin-left:34%;
+    font-size:1.1em;
+}
+       
+.social{
+    margin-left:40%;
+    margin-top:20%;
+    font-size:0.70em;
+}
+      
+.social p{
+    margin-left:5%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+    
+@media only screen and (min-width : 824px) and (max-width : 1024px) {
+        
+.container{
+    width:100%;
+}
+        
+img{
+    margin-left:42%;
+    width:170px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.4em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+    
+.container h1{
+    font-size:1.8em;
+    text-align:center;
+    margin-left:-2%;
+}
+
+button{
+    margin-left:34%;
+    font-size:1.2em;
+}
+       
+.social{
+    margin-left:43%;
+    margin-top:20%;
+    font-size:0.7em;
+}
+    
+.social p{
+    margin-left:4%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
+    
+
+@media only screen  and (min-width : 1025px) and (max-width : 1399px) {
+    
+.container{
+    width:100%;
+}
+        
+img{
+    margin-left:44%;
+    width:170px;
+}     
+    
+nav {
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px; 
+    margin-right:0px;
+}
+        
+nav a {
+    text-decoration: none;
+    font-family: 'roboto condensed';
+    font-weight:lighter;
+    font-size: 1.5em;
+    margin-left:0.5%;
+    padding: 5px;   
+    color: #fff;
+}
+   
+.container h1{
+    font-size:1.9em;
+    text-align:center;
+    margin-left:-2%;
+}
+
+button{
+    margin-left:34%;
+    font-size:1.2em;
+}
+       
+.social{
+    margin-left:44%;
+    margin-top:20%;
+    font-size:0.8em;
+}
+      
+.social p{
+    margin-left:3%;
+    font-family:'roboto condensed';
+    font-weight:lighter;
+    font-size:1.5em;
+    margin-bottom:10%;
+}
+
+.fa-twitter,.fa-instagram,.fa-youtube {
+    color: #fff;
+    text-decoration:none;
+}
+}
